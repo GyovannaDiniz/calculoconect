@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Image
-  source={require('../assets/images/logoEstuda.png')}
+  source={require('../assets/images/logoEstuda.png')}//require serve pra colocar uma imagem que ja tem no meu projeto. caso eu queira pegar imgs de fora devo usar 'uri' busca diretamente pela URL!
   style={[styles.image, { resizeMode: 'contain' }]}
 />
       <View style={styles.circulo} />
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
  image: {
   width: width * 0.5, //largura da img na tela
   height: height * 0.4, //altura (msm coisa da larg.)
-  position: 'absolute',
+  position: 'absolute', //posição meio que vai ser 'flutuante'
   top: height * 0.1, // ajusta a altura onde ela aparece
   left: width * 0.26, // centraliza horizontalmente
 }
