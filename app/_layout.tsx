@@ -5,11 +5,11 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen
         name="index"
-        options={{ title: "" }}
+        options={{headerShown: false }}//diz para o Stack.Navigator(usei o Stack, pois é um atalho do expo-router) não mostrar a barra superior (header).
       />
       <Stack.Screen
         name="principal"
-        options={{ title: "ebaa" }}
+        options={{headerShown: false }}
       />
     </Stack> 
   );
