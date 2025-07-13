@@ -12,8 +12,10 @@ export default function Index() {
   style={[styles.image, { resizeMode: 'contain' }]}
 />
       <View style={styles.circulo} />
-
+<button>aperte!</button>
     </View>
+
+    
   );
 }
 
