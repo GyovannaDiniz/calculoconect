@@ -25,9 +25,7 @@ export default function cadastro(){
                 value={text}
                 onChangeText={(newText) => setText(newText)}
                 />
-             <Button 
-             style={styles.button}
-             title="Sing Up"  />
+             <Button title="Sing Up"  />
 
         </View>
     )
