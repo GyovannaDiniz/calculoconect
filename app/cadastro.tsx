@@ -29,9 +29,13 @@ export default function cadastro(){
                     placeholder='Senha'
                     value={senha}
                     onChangeText={(setSenha)}
-                />
-                   
-                <Button title="Sing Up" color="#ccc" />
+                />              
+                <Button title="Sing Up" color="#ccc"  />
+            <View style={styles.linhaComTexto}>
+                <View style={styles.linha}/>
+                <Text style={styles.ou}>OU</Text>
+                <View style={styles.linha}/>
+            </View>
         </View>
         </View>
     )
@@ -51,22 +55,40 @@ const styles = StyleSheet.create({
         height: height * 0.99,
         backgroundColor: '#FEADA6',
         borderRadius: (width * 0.99) / 2,
-        marginTop: height * 0.77,
+        marginTop: height * 0.40,
         padding: width * 0.20,
     },
 
     input: {
         height: height * 0.06,
         borderColor: '#ccc',
+        backgroundColor: '#F7FAFB',
         borderWidth: 1,
-        marginBottom: 20,
+        marginBottom:height * 0.03,
         paddingHorizontal: 8,
         borderRadius: 20,
     },
     
     titulo: {
+        textAlign:'center',
         fontSize: width * 0.06,
         marginBottom: height * 0.02,
+    },
+    linhaComTexto: {
+        alignItems: 'center', 
+        flexDirection: 'row',
+        marginVertical: height * 0.02,
+        marginHorizontal: width * 0.25,
+    },
+      linha: {
+      flex: 1,
+      height: height * 0.01,
+      backgroundColor: '#ccc',
+    },
+    ou: {
+        marginHorizontal: 10,
+        fontSize: 16,
+        color: '#555',
     },
     
 })
