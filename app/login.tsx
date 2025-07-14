@@ -67,4 +67,4 @@ const style = StyleSheet.create({
     marginBottom: 16,
   },
 });
-//https://www.ev.org.br/cursos/desenvolvendo-aplicacoes-mobile-com-android-studio
+//https://www.ev.org.br/cursos/desenvolvendo-aplicacoes-mobile-com-android-studios
