@@ -12,7 +12,7 @@ export default function Index() {
   style={[styles.image, { resizeMode: 'contain' }]}
 />
       <View style={styles.circulo} />
-<button>aperte!</button>
+
     </View>
 
     
@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
   },
   circulo: {
     width: width * 0.99,
-    height: height * 0.99,
+    height: height * 0.70,
     backgroundColor: '#FEADA6',
     borderRadius: (width * 0.99) / 2,
     marginTop: height * 0.77,
   },
  image: {
   width: width * 0.5, //largura da img na tela
-  height: height * 0.4, //altura (msm coisa da larg.)
+  height: height * 0.8, //altura (msm coisa da larg.)
   position: 'absolute', //posição meio que vai ser 'flutuante'
   top: height * 0.1, // ajusta a altura onde ela aparece
   left: width * 0.26, // centraliza horizontalmente

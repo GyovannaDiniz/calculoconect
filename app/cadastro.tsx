@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextInput, Text,  View, StyleSheet, Dimensions } from 'react-native';
+import { Button, TextInput, Text,  View, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -30,7 +30,9 @@ export default function cadastro(){
                     value={senha}
                     onChangeText={(setSenha)}
                 />              
-                <Button title="Sing Up" color="#ccc"  />
+                <TouchableOpacity style={styles.botao} onPress={() => console.log('clicado')}>
+                    <Text style={styles.texto}>Sing Up</Text>
+                </TouchableOpacity>
             <View style={styles.linhaComTexto}>
                 <View style={styles.linha}/>
                 <Text style={styles.ou}>OU</Text>
@@ -59,36 +61,55 @@ const styles = StyleSheet.create({
         padding: width * 0.20,
     },
 
-    input: {
-        height: height * 0.06,
-        borderColor: '#ccc',
-        backgroundColor: '#F7FAFB',
-        borderWidth: 1,
-        marginBottom:height * 0.03,
-        paddingHorizontal: 8,
-        borderRadius: 20,
-    },
-    
     titulo: {
         textAlign:'center',
         fontSize: width * 0.06,
         marginBottom: height * 0.02,
+        
+    },
+
+    input: {
+        height: height * 0.06,
+        borderColor: '#ccc',
+        backgroundColor: '#F7FAFB',
+        borderWidth: width * 0.001,
+        marginBottom:height * 0.03,
+        paddingHorizontal: width * 0.1,
+        borderRadius: width * 0.10,
+    },
+
+    botao: {
+        backgroundColor:'#FAD0C4',
+        padding: 10,
+        borderRadius:  height * 0.5,
+        borderWidth: width * 0.001,
+        borderColor:'#C1C1C1',
+        marginHorizontal: width * 0.05,
+        alignItems: 'center',
+        width: width * 0.50,
+    },
+    texto: {
+        color:'#000',
+        fontSize: 16,
+        fontWeight:'bold',
     },
     linhaComTexto: {
         alignItems: 'center', 
         flexDirection: 'row',
         marginVertical: height * 0.02,
-        marginHorizontal: width * 0.25,
+        marginHorizontal: width * 0.06,
     },
       linha: {
-      flex: 1,
-      height: height * 0.01,
-      backgroundColor: '#ccc',
+      height: height * 0.002,
+      width: width * 0.2,
+      backgroundColor: '#000',
+      marginVertical: height * 0.02,
+      
     },
     ou: {
-        marginHorizontal: 10,
-        fontSize: 16,
-        color: '#555',
+        marginHorizontal: width * 0.02,
+        fontSize: 14,
+        color: '#000',
     },
     
 })
