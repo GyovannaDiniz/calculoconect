@@ -8,10 +8,15 @@ export default function RootLayout() {
         options={{headerShown: false }}//diz para o Stack.Navigator(usei o Stack, pois é um atalho do expo-router) não mostrar a barra superior (header).
       />
       <Stack.Screen
-        name="principal"
+        name="login"
         options={{headerShown: false }}
       />
-    </Stack> 
+      <Stack.Screen
+        name="cadastro"
+        options={{headerShown: false}}
+      />
+    </Stack>
+  
   );
 
 
