@@ -80,28 +80,28 @@ const styles = StyleSheet.create({
     },
 
     circulo: {
-        width: width * 1.02,
-        height: height * 1.05,
+        width: width * 0.99,
+        height: height * 0.99,
         backgroundColor: '#FEADA6',
         borderRadius: (width * 0.99) / 2,
-        marginTop: height * 0.59,
+        marginTop: height * 0.40,
         padding: width * 0.20,
     },
 
     titulo: {
-        textAlign:'center',
+        textAlign:'center', 
         fontSize: width * 0.06,
-        marginBottom: height * 0.02,
+        marginBottom: height * 0.02, //espaço abaixo de cada campo
         
     },
 
     input: {
         height: height * 0.06,
-        borderColor: '#ccc',
+        borderColor: '#C1C1C1',
         backgroundColor: '#F7FAFB',
-        borderWidth: width * 0.001,
+        borderWidth: width * 0.001, // espessura da borda
         marginBottom:height * 0.03,
-        paddingHorizontal: width * 0.1,
+        paddingHorizontal: width * 0.1, //espaço interno dos lados(na horizontal)
         borderRadius: width * 0.10,
     },
 
@@ -124,8 +124,8 @@ const styles = StyleSheet.create({
 
     linhaComTexto: {
         alignItems: 'center', 
-        flexDirection: 'row',
-        marginVertical: height * 0.02,
+        flexDirection: 'row',  // coloca os itens em linha (horizontal)
+        marginVertical: height * 0.02, //// espacinho acima e abaixo da linha com "OU"
         marginHorizontal: width * 0.06,
     },
 
