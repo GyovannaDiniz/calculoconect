@@ -61,7 +61,7 @@ export default function cadastro(){
                 <View style={styles.linha}/>
             </View>
             <View>
-            <TouchableOpacity style={styles.botaoGoogle} onPress={() => console.log('clicado')}>
+            <TouchableOpacity style={styles.botao} onPress={() => console.log('clicado')}>
                 <Text style={styles.texto}>Google</Text>
             </TouchableOpacity>
         </View>
