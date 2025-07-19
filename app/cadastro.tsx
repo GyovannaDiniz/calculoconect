@@ -18,7 +18,7 @@ export default function cadastro(){
                     style={styles.iconeDentro}
                 />
                 <TextInput
-                    style={styles.inputComIncone}
+                    style={styles.inputComIcone}
                     placeholder='Nome'//nomezinho escrito dentro do campo
                     value={nome}
                     onChangeText={setNome} //vai servir para atualizar o valor
@@ -32,7 +32,7 @@ export default function cadastro(){
                     style={styles.iconeDentro}
                 />
                 <TextInput
-                    style={styles.inputComIncone}
+                    style={styles.inputComIcone}
                     placeholder='Email'
                     value={email}
                     onChangeText={(setEmail)}
@@ -45,7 +45,7 @@ export default function cadastro(){
                     style={styles.iconeDentro}
                 />
                 <TextInput
-                    style={styles.inputComIncone}
+                    style={styles.inputComIcone}
                     placeholder='Senha'
                     value={senha}
                     secureTextEntry={true}
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: width * 0.1, //espaço interno dos lados(na horizontal)
         borderRadius: width * 0.10,
     },
-
+    
     botao: {
         backgroundColor:'#FAD0C4',
         padding: 10,
@@ -155,18 +155,17 @@ const styles = StyleSheet.create({
         marginBottom: height * 0.03,
         
     },
+    
 
     iconeDentro: {
-        width: 20,
-        height: 20,
+        width: width * 0.07,
+        height:  height * 0.04,
         marginRight: 10,
     },
 
-     inputComIncone: {
+     inputComIcone: {
         flex: 1,
         fontSize: 16,
     },
-
-  
 })
 

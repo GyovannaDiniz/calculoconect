@@ -15,6 +15,10 @@ export default function RootLayout() {
         name="cadastro"
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="inicio"
+        options={{headerShown: false}}
+      />
     </Stack>
   
   );
