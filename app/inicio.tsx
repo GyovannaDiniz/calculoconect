@@ -33,37 +33,42 @@ export default function inicio() {
 const styles = StyleSheet.create ({
     container: {
         flex: 1,                   // usa toda altura da tela
-        justifyContent: 'center',  // centraliza verticalmente
+        justifyContent: 'flex-start',  // centraliza verticalmente
         alignItems: 'center',      // centraliza horizontalmente
         backgroundColor: '#fff',
-        padding: width * 0.05,
+        paddingTop: height * 0.08,
+
     },
 
     imagem: {
-        width: width * 0.7,
-        height: height * 0.4,
-        marginBottom: height * 0.02,
+        width: width * 0.8,
+        height: height * 0.25,           
+        marginBottom: height * 0.01,
     },
 
 
     campoComIcone: {
         flexDirection: 'row', //// o Ícone e o input ficam lado a lado
         alignItems: 'center',
+        justifyContent:'center',
         backgroundColor: '#FEADA6',
         borderColor: '#000', //cor da borda
-        borderWidth: width * 0.001, //tamanho da borda dentro
-        borderRadius: width * 0.1,
+        borderWidth: width * 0.004, //tamanho da borda dentro
+        borderRadius: width * 0.06,
         height: height * 0.2,
         width: width * 0.8, //0.6
         paddingHorizontal: width * 0.1,
-        marginBottom: height * 0.1,
+        marginBottom: height * 0.06,
+        
+        
+        
         
     },
 
     iconeDentro: {
-        width: width * 0.2,
-        height: height * 0.11,
-        marginRight: 10,
+        width: width * 0.3,
+        height: height * 0.15,
+        marginRight: 1,
         marginHorizontal: width * 0.1,
     },
 
@@ -71,9 +76,7 @@ const styles = StyleSheet.create ({
         fontSize: 24,
         color: '#000',
         fontWeight:'bold',
-
-        
-    }
+    },
    
 
 })

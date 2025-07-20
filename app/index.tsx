@@ -10,7 +10,7 @@ export default function Index() {
       <Image
   source={require('../assets/images/logoEstuda.png')}//require serve pra colocar uma imagem que ja tem no meu projeto. caso eu queira pegar imgs de fora devo usar 'uri' busca diretamente pela URL!
   style={[styles.image, { resizeMode: 'contain' }]}
-/>
+      />
       <View style={styles.circulo} />
 
     </View>
