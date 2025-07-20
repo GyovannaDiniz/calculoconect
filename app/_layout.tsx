@@ -19,6 +19,10 @@ export default function RootLayout() {
         name="inicio"
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="materiais"
+        options={{headerShown: false}}
+      />
     </Stack>
   
   );
